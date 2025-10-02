@@ -4,7 +4,6 @@ import 'package:bookly_app/features/home/presentation/views/widgets/box_action.d
 import 'package:bookly_app/features/home/presentation/views/widgets/custom_book_image.dart';
 import 'package:flutter/material.dart';
 
-
 class BookDetailsSection extends StatelessWidget {
   const BookDetailsSection({super.key});
 

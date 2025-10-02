@@ -15,14 +15,14 @@ class BookDetailsViewBody extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30),
             child: Column(
-              children:const  [
-                 SafeArea(bottom: false, child: CustomBookDetailsAppBar()),
+              children: const [
+                SafeArea(bottom: false, child: CustomBookDetailsAppBar()),
 
-                 BookDetailsSection(),
+                BookDetailsSection(),
 
-                 Expanded(child: SizedBox(height: 50)),
-                 SimilarBooksSection(),
-                 SizedBox(height: 40),
+                Expanded(child: SizedBox(height: 50)),
+                SimilarBooksSection(),
+                SizedBox(height: 40),
               ],
             ),
           ),
@@ -31,4 +31,3 @@ class BookDetailsViewBody extends StatelessWidget {
     );
   }
 }
-

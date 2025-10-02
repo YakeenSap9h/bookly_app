@@ -1,4 +1,3 @@
-
 import 'package:bookly_app/features/home/presentation/views/widgets/best_seller_list_view_item.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +8,6 @@ class SearchResultListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: ListView.builder(
-        physics: NeverScrollableScrollPhysics(),
         padding: EdgeInsets.zero,
         itemCount: 20,
         itemBuilder: (context, index) {
