@@ -21,7 +21,8 @@ class BooklyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(
-          create: (context) => FeaturedBooksCubit(getIt.get<HomeRepoImpl>()),
+          create: (context) => FeaturedBooksCubit(getIt.get<HomeRepoImpl>())..fetchFeaturedBooks()
+          ,
         ),
         BlocProvider(
           create: (context) => NewestBooksCubit(getIt.get<HomeRepoImpl>()),
@@ -32,9 +33,9 @@ class BooklyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: ThemeData.dark().copyWith(
           scaffoldBackgroundColor: kPrimaryColor,
-          textTheme: GoogleFonts.montserratTextTheme(
-            ThemeData.dark().textTheme,
-          ),
+         //! textTheme: GoogleFonts.montserratTextTheme(
+         //!   ThemeData.dark().textTheme,
+         //! ),
         ),
       ),
     );

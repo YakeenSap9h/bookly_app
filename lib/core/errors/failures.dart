@@ -33,6 +33,9 @@ class ServerFailure extends Failure {
         return ServerFailure("Request to ApiServer was canceld");
 
       case DioExceptionType.connectionError:
+        print('ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg\n');
+        print('💥 Dio Error: ${dioExeption.type} - ${dioExeption.message}');
+
         return ServerFailure("Connection Error with ApiServer");
 
       case DioExceptionType.unknown:
@@ -42,6 +45,8 @@ class ServerFailure extends Failure {
         //!       if (dioExeption.message?.contains('SocketException') == true) {
         //!   return ServerFailure('No Internet connection !');
         //!}
+        print('ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg\n');
+        print('💥 Dio Error: ${dioExeption.type} - ${dioExeption.message}');
         return ServerFailure("UnExpected Error , Plesase tryy again later !");
       //! default:
       //! return ServerFailure('Opps there was an erroe , please try again');
