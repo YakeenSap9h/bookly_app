@@ -13,7 +13,7 @@ class SimilarBooksListView extends StatelessWidget {
         itemBuilder: (context, index) {
           return const Padding(
             padding: EdgeInsets.symmetric(horizontal: 5),
-            child: CustomBookImage(),
+            child: CustomBookImage(imageUrl: 'https://images-cdn.ubuy.com.ar/6350ecfd2df1e90e1144c55c-big-tits-hot-lady-pin-up-thickerstickers.jpg',),
           );
         },
       ),

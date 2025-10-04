@@ -15,7 +15,9 @@ class BookDetailsSection extends StatelessWidget {
       children: [
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * .18),
-          child: const CustomBookImage(),
+          child: const CustomBookImage(
+            imageUrl: 'https://images-cdn.ubuy.com.ar/6350ecfd2df1e90e1144c55c-big-tits-hot-lady-pin-up-thickerstickers.jpg',
+          ),
         ),
         const SizedBox(height: 43),
         const Text('The Jungle Book', style: Styles.textStyle30),
