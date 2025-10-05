@@ -16,7 +16,8 @@ class BookDetailsSection extends StatelessWidget {
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * .18),
           child: const CustomBookImage(
-            imageUrl: 'https://images-cdn.ubuy.com.ar/6350ecfd2df1e90e1144c55c-big-tits-hot-lady-pin-up-thickerstickers.jpg',
+            imageUrl:
+                'https://images-cdn.ubuy.com.ar/6350ecfd2df1e90e1144c55c-big-tits-hot-lady-pin-up-thickerstickers.jpg',
           ),
         ),
         const SizedBox(height: 43),
@@ -34,7 +35,11 @@ class BookDetailsSection extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 18),
-        const BookRating(mainAxisAlignment: MainAxisAlignment.center),
+        const BookRating(
+          mainAxisAlignment: MainAxisAlignment.center,
+          rating: "fsf",
+          count: 11,
+        ),
         const SizedBox(height: 37),
         const BoxAction(),
       ],
