@@ -41,6 +41,7 @@ class BookListViewItem extends StatelessWidget {
                   ),
                   const SizedBox(height: 3),
                   Text(
+                    overflow: TextOverflow.ellipsis,
                     bookModel.volumeInfo.authors![0],
                     style: Styles.textStyle14.copyWith(
                       fontWeight: FontWeight.bold,

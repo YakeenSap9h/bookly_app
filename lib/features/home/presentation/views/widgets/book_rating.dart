@@ -19,11 +19,16 @@ class BookRating extends StatelessWidget {
       children: [
         Icon(FontAwesomeIcons.solidStar, color: Color(0xffFFDD4F), size: 14),
         const SizedBox(width: 6.3),
-        Text(rating, style: Styles.textStyle16),
+        Text(
+          rating,
+          style: Styles.textStyle16,
+          overflow: TextOverflow.ellipsis,
+        ),
         const SizedBox(width: 5),
         Opacity(
           opacity: .5,
           child: Text(
+            overflow: TextOverflow.ellipsis,
             '$count',
             style: Styles.textStyle14.copyWith(fontWeight: FontWeight.w600),
           ),
