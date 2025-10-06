@@ -16,13 +16,14 @@ class SimilarBooksListView extends StatelessWidget {
           return SizedBox(
             height: MediaQuery.of(context).size.height * .14,
             child: ListView.builder(
+              itemCount: state.books.length,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
-                return const Padding(
+                return Padding(
                   padding: EdgeInsets.symmetric(horizontal: 5),
                   child: CustomBookImage(
                     imageUrl:
-                        'https://images-cdn.ubuy.com.ar/6350ecfd2df1e90e1144c55c-big-tits-hot-lady-pin-up-thickerstickers.jpg',
+                        state.books[index].volumeInfo.imageLinks.thumbnail,
                   ),
                 );
               },
