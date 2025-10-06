@@ -9,7 +9,7 @@ class BookRating extends StatelessWidget {
     required this.rating,
     required this.count,
   });
-  final String rating;
+  final num rating;
   final int count;
   final MainAxisAlignment mainAxisAlignment;
   @override
@@ -20,7 +20,7 @@ class BookRating extends StatelessWidget {
         Icon(FontAwesomeIcons.solidStar, color: Color(0xffFFDD4F), size: 14),
         const SizedBox(width: 6.3),
         Text(
-          rating,
+          '$rating',
           style: Styles.textStyle16,
           overflow: TextOverflow.ellipsis,
         ),
